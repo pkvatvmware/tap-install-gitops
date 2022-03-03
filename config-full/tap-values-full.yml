@@ -26,7 +26,7 @@ learningcenter:
   ingressDomain: #@ data.values.tap.domains.learningCenter
 
 tap_gui:
-  service_type: ClusterIP
+  service_type: #@ data.values.tap.service
   ingressEnabled: "true"
   ingressDomain: #@ data.values.tap.domains.main
   app_config:
